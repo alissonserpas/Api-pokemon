@@ -1,0 +1,75 @@
+@import url('https://fonts.googleapis.com/css2?family=Caveat&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Ysabeau+Infant:wght@200&display=swap');
+
+
+.encabezado{
+    font-family: 'Ysabeau Infant', sans-serif;
+    background-color: brown;
+}
+
+h2{
+    font-family: 'Ysabeau Infant', sans-serif;
+    color: #fff;
+    font-size: 2.5rem;
+}
+
+.contenedor-img{
+    background-color: brown;
+    text-align: center;
+    border-radius: 20%;
+}
+
+.animacion{
+    transition: all 1s;
+  transform: perspective(1px) translateZ(0);
+  animation: show 0.5s 0s forwards, flutuate 2s 0.5s infinite;
+  }
+  @keyframes show {
+    0% {
+      transform: translateY(2000px);
+      
+    }
+
+    100% {
+      transform:  translateY(-16px);
+    }
+  }
+
+  @keyframes flutuate {
+  0% {
+    -webkit-transform: translateY(-16px);
+    transform: translateY(-16px);
+  }
+  50% {
+    -webkit-transform: translateY(-8px);
+    transform: translateY(-8px) ;
+  }
+  100% {
+    -webkit-transform: translateY(-16px);
+    transform: translateY(-16px);
+  }
+  }
+
+.contenedor-img:hover{
+    transform: scale(1.1);
+}
+
+.contenedor-img img{
+    margin: 10px;
+    max-width: 150px;
+    filter: drop-shadow(2px 4px 12px rgba(255, 255, 255, 0.17));
+}
+
+table, td{
+    background-color: #fff;
+    border: 1px solid rgb(0, 0, 0);
+    border-collapse: collapse;
+}
+
+td{
+    padding: 10px;
+}
+
+.title{
+    font-weight: bold;
+}
